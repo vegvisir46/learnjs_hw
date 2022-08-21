@@ -1,7 +1,10 @@
 import "./App.css";
+import Restaurants from "../../features/restaurant/ui/restaurants/component";
 
-function App() {
-  return <div></div>;
-}
-
-export default App;
+export const App = ({ restaurants }) => {
+  return (
+    <main>
+      <Restaurants restaurants={restaurants} />
+    </main>
+  );
+};
